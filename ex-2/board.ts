@@ -13,6 +13,8 @@ const createDesk = (chessSize: number) => {
                     chess += '██';
                 }
             }
+        } else if(i === size) {
+            return chess;
         } else {
             for (let j = 1; j <= size; j++){
                 if (j % 2 === 1){
@@ -26,3 +28,5 @@ const createDesk = (chessSize: number) => {
         }
     }
 };
+
+console.log(createDesk(8));
